@@ -41,7 +41,7 @@ width = img.size[0] / args.cols
 height = img.size[1] / args.rows
 
 count = 0
-for y in range(args.rows, 0, -1):
+for y in range(args.rows):
   for x in range(args.cols):
     spritesheet['sub_textures'][count] = { 'x': x * width, 'y': y * height, 'width': width, 'height': height }
     count += 1
